@@ -22,7 +22,7 @@ export default function App(){
           />
           <View className='relative mt-5'>
             <Text className='text-3xl text-white font-bold text-center'>Descover Endless possibilities with{' '}
-              <Text className='text-secondary-200'>Marzieh</Text>
+              <Text className='text-secondary-200'>Moonlight</Text>
             </Text>
             <Image
               source={images.path}
@@ -40,7 +40,7 @@ export default function App(){
         </View>
         
       </ScrollView>
-      <StatusBar backgroundColor='#161622' style='light'/>
+      <StatusBar backgroundColor='#20B2AA' style='dark' />
     </SafeAreaView>
   );
 }
