@@ -40,13 +40,13 @@ const TabsLayout = () => {
             name='home'
             options={
                 {
-                    title: 'Home',
+                    title: 'خانه',
                     headerShown: false,
                     tabBarIcon: ({color, focused}) =>(
                         <TabIcon 
                         icon={icons.home}
                         color={color}
-                        name="Home"
+                        name="خانه"
                         focused={focused}
                         />
                     )
@@ -57,13 +57,13 @@ const TabsLayout = () => {
             name='bookmark'
             options={
                 {
-                    title: 'Bookmark',
+                    title: 'نشانه گذاری',
                     headerShown: false,
                     tabBarIcon: ({color, focused}) =>(
                         <TabIcon 
                         icon={icons.bookmark}
                         color={color}
-                        name="Bookmark"
+                        name="نشانه گذاری"
                         focused={focused}
                         />
                     )
@@ -74,13 +74,13 @@ const TabsLayout = () => {
             name='create'
             options={
                 {
-                    title: 'Create',
+                    title: 'ایجاد',
                     headerShown: false,
                     tabBarIcon: ({color, focused}) =>(
                         <TabIcon 
                         icon={icons.plus}
                         color={color}
-                        name="Create"
+                        name="ایجاد"
                         focused={focused}
                         />
                     )
@@ -91,13 +91,13 @@ const TabsLayout = () => {
             name='profile'
             options={
                 {
-                    title: 'Profile',
+                    title: 'حساب کاربری',
                     headerShown: false,
                     tabBarIcon: ({color, focused}) =>(
                         <TabIcon 
                         icon={icons.profile}
                         color={color}
-                        name="Profile"
+                        name= 'حساب کاربری'
                         focused={focused}
                         />
                     )

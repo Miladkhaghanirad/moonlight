@@ -4,8 +4,12 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import {images} from '../constants';
 import CustomButton from '@/components/CustomButton';
 import { StatusBar } from 'expo-status-bar';
+import {useGlobalContext} from '../context/GlobalProvider';
 
 export default function App(){
+  const { loading, isLogged } = useGlobalContext();
+
+  if (!loading && isLogged) return <Redirect href="/home" />;
   return(
     <SafeAreaView className='bg-white h-full'>
       <ScrollView contentContainerStyle = {{ height: '100%'}}>
@@ -21,7 +25,7 @@ export default function App(){
             resizeMode='contain'
           />
           <View className='relative mt-5'>
-            <Text className='text-3xl text-white font-bold text-center'>Descover Endless possibilities with{' '}
+            <Text className='text-3xl text-black font-bold text-center'>Descover Endless possibilities with{' '}
               <Text className='text-secondary-200'>Moonlight</Text>
             </Text>
             <Image
@@ -31,10 +35,10 @@ export default function App(){
             />
           </View>
          
-          <Text className='text-sm font-pregular text-black-100 mt-7 text-center'>Where creativity meets innovation:
-            embark on a journey of limitless exploration with moonligh
+          <Text className='text-sm font-pregular text-black-100 mt-7 text-center'>جایی که خلاقیت با نوآوری تلاقی می‌کند:  
+          سفری به دنیای بی‌پایان اکتشافات را با مون‌لایت آغاز کنید.
           </Text>
-          <CustomButton title="Continue with Email"
+          <CustomButton title="ادامه از طریق ایمیل"
           handlePress={() => router.push('/sign-in')}
           containerStyles="w-full mt7" />
         </View>
